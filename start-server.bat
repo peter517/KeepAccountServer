@@ -1,0 +1,1 @@
+java -jar target/KeepAccountServer-1.0.jar
