@@ -69,5 +69,16 @@
 			<artifactId>netty</artifactId>
 			<version>3.2.9.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>de.mindpipe.android</groupId>
+			<artifactId>android-logging-log4j</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+
 	</dependencies>
 </project>

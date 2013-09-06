@@ -1,8 +1,5 @@
 package com.pengjun.ka.net;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.jboss.netty.channel.ChannelEvent;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelStateEvent;
@@ -11,15 +8,14 @@ import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
 
 import com.pengjun.ka.net.protobuf.KaProtocol.ArProtocol;
+import com.pengjun.ka.utils.LoggerUtils;
 
 public class KaServerHandler extends SimpleChannelUpstreamHandler {
-
-	private static final Logger logger = Logger.getLogger(KaServerHandler.class.getName());
 
 	@Override
 	public void handleUpstream(ChannelHandlerContext ctx, ChannelEvent e) throws Exception {
 		if (e instanceof ChannelStateEvent) {
-			logger.info(e.toString());
+			LoggerUtils.serviceLogger.info(e.toString());
 		}
 		super.handleUpstream(ctx, e);
 	}
@@ -43,7 +39,7 @@ public class KaServerHandler extends SimpleChannelUpstreamHandler {
 
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) {
-		logger.log(Level.WARNING, "Unexpected exception from downstream.", e.getCause());
+		LoggerUtils.serviceLogger.warn("Unexpected exception from downstream.", e.getCause());
 		e.getChannel().close();
 	}
 
