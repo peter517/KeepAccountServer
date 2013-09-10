@@ -2,6 +2,7 @@
 ## Eclipse
 #################
 
+target/
 gen/
 *.pydevproject
 .project
