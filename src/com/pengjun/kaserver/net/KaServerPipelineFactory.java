@@ -1,4 +1,4 @@
-package com.pengjun.ka.net;
+package com.pengjun.kaserver.net;
 
 import static org.jboss.netty.channel.Channels.pipeline;
 
@@ -9,7 +9,7 @@ import org.jboss.netty.handler.codec.protobuf.ProtobufEncoder;
 import org.jboss.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import org.jboss.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
 
-import com.pengjun.ka.net.protobuf.KaProtocol;
+import com.pengjun.kaserver.net.protobuf.KaProtocol;
 
 public class KaServerPipelineFactory implements ChannelPipelineFactory {
 

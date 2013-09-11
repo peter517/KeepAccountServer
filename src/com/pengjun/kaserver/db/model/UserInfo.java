@@ -1,4 +1,4 @@
-package com.pengjun.ka.db.model;
+package com.pengjun.kaserver.db.model;
 
 import java.io.Serializable;
 

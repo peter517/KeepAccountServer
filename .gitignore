@@ -2,7 +2,11 @@
 ## Eclipse
 #################
 
+#ka
 target/
+*.log
+*.db
+
 gen/
 *.pydevproject
 .project
