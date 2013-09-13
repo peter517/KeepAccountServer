@@ -1,2 +1,2 @@
 cd ../PUtils 
-mvn package & mvn install:install-file -Dfile=target/PUtils-1.0.jar -DgroupId=com.pengjun -DartifactId=PUtils -Dversion=1.0 -Dpackaging=jar  & cd ../KeepAccountServer  & mvn package & pause
+mvn package & mvn install & cd ../KeepAccountServer  & mvn package & pause
