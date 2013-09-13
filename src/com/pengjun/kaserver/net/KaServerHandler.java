@@ -35,8 +35,10 @@ public class KaServerHandler extends SimpleChannelUpstreamHandler {
 			builder = UserInfoService.checkLogin(kaMsg);
 			break;
 		case BACKUP:
+			builder = UserInfoService.backup(kaMsg);
 			break;
 		case RESTORE:
+			builder = UserInfoService.restore(kaMsg);
 			break;
 		}
 		e.getChannel().write(builder.build());

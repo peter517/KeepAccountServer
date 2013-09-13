@@ -4,6 +4,7 @@ import com.pengjun.kaserver.utils.KaServerConstants;
 import com.pengjun.net.BaseNettyServer;
 
 public class KaServer extends BaseNettyServer {
+
 	private final static int port = 8000;
 
 	private KaServer(int port) {
@@ -24,7 +25,6 @@ public class KaServer extends BaseNettyServer {
 	}
 
 	public static void main(String[] args) throws Exception {
-
 		KaServerConstants.serviceLogger.info("main start");
 		KaServer.getInstance().start();
 	}

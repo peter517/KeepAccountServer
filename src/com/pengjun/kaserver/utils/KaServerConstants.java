@@ -6,5 +6,7 @@ import com.pengjun.utils.LoggerUtils;
 
 public class KaServerConstants {
 
-	public static final Logger serviceLogger = LoggerUtils.getLogger("ka");
+	public static final Logger serviceLogger = LoggerUtils.getLogger("kaserver");
+	public static final String BACKUP_ROOT = "backup";
+	public static final String BACKUP_FILE_POSTFIX = ".bk";
 }

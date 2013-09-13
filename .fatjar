@@ -1,14 +1,14 @@
 #Fat Jar Configuration File
-#Thu Sep 12 23:47:14 CST 2013
+#Fri Sep 13 14:59:49 CST 2013
 onejar.license.required=true
 manifest.classpath=
 manifest.removesigners=true
 onejar.checkbox=false
 jarname=KeepAccountServer.jar
 manifest.mergeall=true
-manifest.mainclass=
+manifest.mainclass=com.pengjun.kaserver.net.KaServer
 manifest.file=<createnew>
 jarname.isextern=false
 onejar.expand=
-excludes=
+excludes=<jar|android-2.3.3.jar>
 includes=
