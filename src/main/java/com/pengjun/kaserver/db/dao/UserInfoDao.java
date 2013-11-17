@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.stmt.Where;
 import com.j256.ormlite.support.ConnectionSource;
-import com.pengjun.db.BaseDao;
+import com.pengjun.db.orm.BaseDao;
 import com.pengjun.kaserver.db.DbHelper;
 import com.pengjun.kaserver.db.model.UserInfo;
 

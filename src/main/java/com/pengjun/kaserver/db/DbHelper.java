@@ -1,6 +1,6 @@
 package com.pengjun.kaserver.db;
 
-import com.pengjun.db.BaseDbHelper;
+import com.pengjun.db.orm.BaseDbHelper;
 import com.pengjun.kaserver.db.model.UserInfo;
 
 public class DbHelper extends BaseDbHelper {
